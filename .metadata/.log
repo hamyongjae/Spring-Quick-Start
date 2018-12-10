@@ -1,0 +1,1680 @@
+!SESSION 2018-12-10 13:23:31.631 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 13:24:31.562
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bbb12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-12-10 13:26:29.401
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:42)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:911)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:344)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:544)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:74)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:110)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:233)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:191)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:77)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-12-10 13:26:29.404
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:32)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:911)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:344)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:544)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:74)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:110)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:233)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:191)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:77)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-10 13:26:32.707
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-10 13:26:32.708
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+!SESSION 2018-12-10 13:27:22.819 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/C:/Users/bbb12/eclipse-workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2018-12-10 13:28:30.470
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-12-10 13:28:30.470
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-12-10 13:28:31.992
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-12-10 13:28:32.018
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 13:28:40.290
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bbb12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-10 13:30:09.957
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-10 13:30:09.958
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-10 13:34:46.552
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:81)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:81)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at jdk.internal.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:168)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:153)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.getArtifactRepositories(DownloadManager.java:110)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:95)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:111)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:255)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:80)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:48)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:178)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2018-12-10 13:34:46.553
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+!SESSION 2018-12-10 13:36:21.925 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/C:/Users/bbb12/eclipse-workspace/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-12-10 13:36:45.587
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.jface 2 0 2018-12-10 13:36:47.297
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-10 13:36:47.297
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43f8b307,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@fb1e1fd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-12-10 13:36:59.107
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 13:37:01.735
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bbb12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.ide.eclipse.wizard 4 0 2018-12-10 13:39:08.255
+!MESSAGE Template data missing. Please check the template Spring MVC Project to verify it has content.
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.springframework.ide.eclipse.wizard.template.TemplateDataUIJob.run(TemplateDataUIJob.java:74)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: Template data missing. Please check the template Spring MVC Project to verify it has content.
+	at org.springframework.ide.eclipse.wizard.template.TemplateDataUIJob.run(TemplateDataUIJob.java:75)
+	... 1 more
+Root exception:
+org.eclipse.core.runtime.CoreException: Template data missing. Please check the template Spring MVC Project to verify it has content.
+	at org.springframework.ide.eclipse.wizard.template.TemplateDataUIJob.run(TemplateDataUIJob.java:75)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:24.633
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:24.650
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:25.668
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:25.683
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:25.701
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:40.708
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:40:40.715
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:56:59.699
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:56:59.708
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:56:59.711
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.ui 2 2 2018-12-10 13:57:12.157
+!MESSAGE Invalid preference category path: org.springframework.tooling.boot.java.ls.preferences (bundle: org.springframework.ide.eclipse.boot.dash, page: org.springframework.ide.eclipse.boot.dash.prefs.RemoteAppsPrefsPage)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:35.732
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:35.739
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:35.742
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:39.833
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:41.259
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:41.263
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:41.265
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:41.267
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:41.468
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:58:41.879
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 13:58:41.905
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:43.268
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:43.273
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:43.275
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:50.301
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:50.304
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:58:50.307
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:18.603
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:18.607
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:18.610
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:18.613
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 13:59:46.251
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:57.960
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:57.965
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:57.968
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:58.025
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:58.030
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:59.644
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:59.937
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:59.950
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:59.954
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 13:59:59.978
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.409
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.412
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.416
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.420
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.424
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.427
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.430
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.433
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.437
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.440
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.444
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.447
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.450
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.453
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.457
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.460
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.463
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.474
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:01.477
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:02.630
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:06.224
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:06.227
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:06.234
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:06.243
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:00:09.532
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:00:09.536
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.662
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.665
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.670
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.673
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.675
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.677
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.679
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.682
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.717
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:13.721
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:14.984
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:15.987
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:16.990
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.866
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.868
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.871
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.873
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.880
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.882
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.883
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:17.885
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:18.002
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:18.791
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:18.793
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:19.015
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:19.925
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:19.933
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:20.027
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:20.397
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:20.399
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:21.034
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:21.744
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:21.746
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:21.945
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:21.948
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:22.039
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:22.123
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:22.131
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:23.046
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:24.055
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:25.061
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:26.065
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:27.070
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:28.074
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:28.411
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:28.413
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:29.077
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:30.081
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:31.089
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:32.093
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:33.099
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:34.105
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:35.109
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:36.116
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:37.124
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:38.130
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:39.138
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:40.142
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:41.153
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:42.167
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:42.220
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:42.222
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:43.171
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:44.183
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:44.701
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:44.703
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:44.709
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:44.711
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:45.194
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.019
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.021
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.207
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.496
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.498
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.641
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:46.643
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:47.221
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:48.225
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.228
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.331
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.335
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.338
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.350
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.352
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.644
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.646
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.649
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.651
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.653
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.655
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.657
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.659
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.661
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.663
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.972
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.976
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.979
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.982
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.985
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:49.989
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:50.240
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:51.246
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:52.251
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:53.254
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:54.257
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:55.261
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.248
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.250
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.254
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.256
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.259
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.261
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.263
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.264
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:56.265
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.267
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.766
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.768
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.770
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.772
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.774
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.776
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.778
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.779
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.781
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:57.783
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:58.271
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:00:59.280
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:00.285
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:01.289
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:02.293
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:03.304
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:04.312
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:04.900
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:04.904
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:04.914
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:04.918
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:05.321
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:06.327
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:06.487
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:06.495
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.333
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.909
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.911
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.913
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.917
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:07.919
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:08.108
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:08.110
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:08.113
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:08.115
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:08.338
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:09.343
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:10.351
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:11.364
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.237
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.239
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.244
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.382
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.385
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.386
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.388
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.390
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.394
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.395
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.397
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.399
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:14.403
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:01:14.409
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:21.416
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:21.418
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:21.440
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:21.442
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.582
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.586
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.815
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.817
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.819
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.820
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.822
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.825
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.827
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.829
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.831
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:30.834
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:01:30.843
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.673
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.676
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.907
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.911
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.913
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.914
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.916
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.918
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.920
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.922
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.923
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:46.926
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:01:46.934
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:53.861
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:53.864
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.105
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.107
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.110
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.112
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.114
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.116
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.118
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.120
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.122
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:01:54.124
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:01:54.133
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.225
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.228
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.467
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.470
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.472
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.474
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.476
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.479
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.481
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.483
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.485
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:08.487
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:02:08.496
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-10 14:02:42.962
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at jdk.internal.reflect.GeneratedMethodAccessor139.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at jdk.internal.reflect.GeneratedMethodAccessor139.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-10 14:02:42.963
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases-for-indigo/1.4/.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.807
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.811
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.853
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.855
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.856
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.858
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.860
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.863
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.865
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.867
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.868
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:02:54.870
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:02:54.872
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:35.573
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:35.581
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:03:35.604
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:35.897
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:37.303
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:37.305
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:03:45.709
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:45.719
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:45.726
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:46.044
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:49.469
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:49.471
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:03:56.073
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:56.084
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:56.091
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:56.408
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:57.444
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:03:57.446
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.860
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.862
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.865
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.988
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.990
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.992
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.993
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.996
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:06.999
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:07.001
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:07.003
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:07.004
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:07.007
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-12-10 14:04:07.010
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:11.070
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:11.072
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:11.093
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2018-12-10 14:04:11.095
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre-10.0.2.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:05:47.927
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:06:02.255
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:09:58.083
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2018-12-10 14:10:54.564 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-12-10 14:11:09.755
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.jface 2 0 2018-12-10 14:11:11.061
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-10 14:11:11.061
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45d5b3d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@391de98d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.genuitec.eclipse.patches 2 0 2018-12-10 14:11:18.286
+!MESSAGE Patches instrumentation extension PerformanceJavaNavigatorContentProviderPatch ([31078] [Angular] Webclipse UI freezes constantly after closing/reopening Angular 2 projects) has not weaved class org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 14:11:20.854
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bbb12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:11:29.501
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:11:35.444
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:11:35.464
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-12-10 14:11:46.969
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.ui 2 2 2018-12-10 14:11:49.911
+!MESSAGE Invalid preference category path: org.springframework.tooling.boot.java.ls.preferences (bundle: org.springframework.ide.eclipse.boot.dash, page: org.springframework.ide.eclipse.boot.dash.prefs.RemoteAppsPrefsPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:13:22.435
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:13:22.471
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:13:32.030
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:13:32.040
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:15:31.381
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:15:31.387
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:15:40.231
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:15:40.236
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:03.317
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:03.320
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:08.696
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:08.699
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:59.792
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:16:59.798
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-12-10 14:20:08.060
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:32:03.639
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:32:03.642
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:37.089
+!MESSAGE The POM for commons-logging:commons-logging:jar:1.2 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:41.733
+!MESSAGE The POM for commons-logging:commons-logging:jar:1.2 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:42.466
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:42.471
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:42.479
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:43.245
+!MESSAGE The POM for commons-logging:commons-logging:jar:1.2 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:43.727
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:43.742
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:49.886
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 14:44:49.889
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2018-12-10 15:17:23.774 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-12-10 15:19:39.842
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-12-10 15:19:40.080
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.jface 2 0 2018-12-10 15:19:40.281
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-10 15:19:40.281
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78181f7f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6682e9b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.genuitec.eclipse.patches 2 0 2018-12-10 15:19:46.620
+!MESSAGE Patches instrumentation extension PerformanceJavaNavigatorContentProviderPatch ([31078] [Angular] Webclipse UI freezes constantly after closing/reopening Angular 2 projects) has not weaved class org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 15:19:52.384
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bbb12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 15:19:52.785
+!MESSAGE The POM for commons-logging:commons-logging:jar:1.2 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 15:20:04.771
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 15:20:04.786
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style></style>
+<script>
+function checkID(){
+//영어로 시작하고 6자리 이상	
+//영문과 숫자가 반드시 입력
+	var id = document.querySelector('#id');
+	var sid = document.querySelector('#sid');
+	if(id.value.length>=6){
+		//^시작. 시작은 무조건 알파벳이어야한다. 그 뒤에는 영어와 숫자로 이루어져야한다.
+		//+는 박복적으로 사용할 수 있다.
+		var exp = /^[a-zA-Z][a-zA-Z0-9]+/;
+		if(!exp.test(id.value)){
+			sid.innerHTML = '영어와 숫자입력';
+			id.focus();
+			return;
+		}else{
+			sid.innerHTML = '사용가능';
+			return;
+		}
+		
+	}else{
+		sid.innerHTML = '6자리 이상입니다.';
+		id.focus();
+		return;
+	}
+	
+
+	
+};
+function checkPWD(){
+	
+	//영어로 시작하고 8자리 이상	
+	//숫자와 특수문자가 반드시 포함
+		var pwd = document.querySelector('#pwd');
+		var spwd = document.querySelector('#spwd');
+		if(pwd.value.length>=8){
+			//^시작. 시작은 무조건 알파벳이어야한다. 그 뒤에는 영어와 숫자로 이루어져야한다.
+			//+는 박복적으로 사용할 수 있다.
+			//소문자 있니? (?=.*[a-z]) ^는 NOT
+			//시작이 없으므로 아무거나 들어와도 됨.
+			//주의사항. 영어소문자1개이상, 대문자 1개이상, 숫자1개이상, 특수문자 1개이상.
+			var exp = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])/;
+			if(!exp.test(pwd.value)){
+				spwd.innerHTML = '영어,숫자,특수문자 조합으로 입력';
+				pwd.focus();
+				return;
+			}else{
+				spwd.innerHTML = '사용가능';
+				return;
+			}
+			
+		}else{
+			spwd.innerHTML = '8자리 이상입니다.';
+			pwd.focus();
+			return;
+		}
+	
+};
+function checkMail(){
+	
+	//영어로 시작하고 6자리 이상	
+	//영문과 숫자가 반드시 입력
+		var mail = document.querySelector('#mail');
+		var smail = document.querySelector('#smail');
+		if(id.value.length>=6){
+			//^시작. 시작은 무조건 알파벳이어야한다. 그 뒤에는 영어와 숫자로 이루어져야한다.
+			//+는 박복적으로 사용할 수 있다.
+			var exp = /\w*@\w*.[a-zA-z]$/;
+			if(!exp.test(mail.value)){
+				smail.innerHTML = '영어와 숫자입력';
+				mail.focus();
+				return;
+			}else{
+				smail.innerHTML = '사용가능';
+				return;
+			}
+			
+		}else{
+			smail.innerHTML = '6자리 이상입니다.';
+			mail.focus();
+			return;
+		}
+	
+}
+function register(){
+	
+};
+
+</script>
+</head>
+<body>
+<h1>회원 가입</h1>
+<form>
+ID<input type="text" name="id" id="id" onblur="checkID();"><br>
+<span id="sid"></span><br>
+Email<input type="text" name="mail" id="mail"><br>
+<span id="smail"></span><br>
+PWD<input type="text" name="pwd" id="pwd" onblur="checkMail();"><br>
+<span id="spwd"></span><br>
+<input type="button" value="REGISTER" onclick="register();"><br>
+</form>
+</body>
+</html>

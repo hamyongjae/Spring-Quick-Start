@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.dao.mapper.SearchMapper">
+	
+	
+	
+	
+	
+	<select id="selectuser" parameterType="String" resultType="users">
+		SELECT * FROM USERS WHERE ID LIKE '%'||#{keyword}||'%' OR NAME LIKE '%'||#{keyword}||'%'
+	</select>
+	<select id="selectreview" parameterType="String" resultType="review">
+		SELECT * FROM REVIEW WHERE R_NO LIKE '%'||#{keyword}||'%' 
+	</select>
+	<select id="selectinterest" parameterType="String" resultType="interest">
+		SELECT * FROM INTEREST WHERE ID LIKE '%'||#{keyword}||'%' 
+	</select>
+	<select id="selectactivity" parameterType="activity" resultType="activity">
+		SELECT ACT_NO, CAT_NO, TITLE, ADDR, ADDR_LAT, ADDR_LONG,
+		ACT_IMG1, ACT_IMG2, ACT_IMG3, ACT_IMG4, ACT_PHONE, DETAIL,
+		ID, TO_CHAR(ST_DATE,'YY-MM-DD') AS ST_DATE,TO_CHAR(END_DATE,'YY-MM-DD') AS END_DATE , QUANTITY, STATE, GEN_NO, 
+		( 6371 * ACOS( COS( #{addr_lat}* ACOS(-1) / 180 ) * COS( ADDR_LAT * ACOS(-1) / 180 ) * COS( (ADDR_LONG * ACOS(-1) / 180) - (#{addr_long}* ACOS(-1) / 180)) + SIN( #{addr_lat}* ACOS(-1) / 180 ) * SIN(ADDR_LAT* ACOS(-1) / 180 ) ))  AS DISTANCE 
+		FROM ACTIVITY WHERE TITLE LIKE '%'||#{title}||'%' AND CAT_NO=#{cat_no}
+		AND TO_DATE(#{st_date},'yyyy-mm-dd') <![CDATA[ <= ]]> ST_DATE 
+		AND END_DATE <![CDATA[ <= ]]> TO_DATE(#{end_date},'yyyy-mm-dd') 
+		ORDER BY DISTANCE
+	</select>
+	
+</mapper>
+
+
+
+
+
+

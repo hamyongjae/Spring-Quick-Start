@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.hw.vo.Users" alias="users"/>
+		<typeAlias type="com.hw.vo.Activity" alias="activity"/>
+		<typeAlias type="com.hw.vo.Review" alias="review"/>
+		<typeAlias type="com.hw.vo.Interest" alias="interest"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="com/hw/dao/config/usersmapper.xml"/>
+		<mapper resource="com/hw/dao/config/activitymapper.xml"/>
+		<mapper resource="com/hw/dao/config/reviewmapper.xml"/>
+		<mapper resource="com/hw/dao/config/interestmapper.xml"/>
+		<mapper resource="com/hw/dao/config/searchmapper.xml"/>
+		<mapper resource="com/hw/dao/config/categorymapper.xml"/>
+	</mappers>
+</configuration>
+
+
+
+
+
+

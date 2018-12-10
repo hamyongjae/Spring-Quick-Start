@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.dao.mapper.UsersMapper">
+			
+	<select id="select" parameterType="String" 
+	resultType="users">
+		SELECT * FROM USERS WHERE ID=#{id}
+	</select>
+	<select id="selectall" resultType="users">
+		SELECT * FROM USERS
+	</select>
+	<insert id="insert" parameterType="users">
+		INSERT INTO USERS VALUES (#{id},#{name},TO_DATE(#{birth},'yyyy-mm-dd'),#{pwd},#{phone_num},#{addr},#{user_lat},#{user_long},#{pro_yn},#{img})
+	</insert>
+	<update id="update" parameterType="users">
+		UPDATE USERS SET NAME=#{name}, BIRTH=TO_DATE(#{birth},'yyyy-mm-dd'), PWD=#{pwd}, PHONE_NUM=#{phone_num}, ADDR=#{addr}, PRO_YN=#{pro_yn}, IMG=#{img} WHERE ID=#{id}
+	</update>
+	<delete id="delete" parameterType="String">
+		DELETE FROM USERS WHERE ID=#{id}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+

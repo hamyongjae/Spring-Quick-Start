@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.dao.mapper.ActivityMapper">
+			
+	<select id="select" parameterType="String" 
+	resultType="activity">
+		SELECT * FROM ACTIVITY WHERE ACT_NO=#{act_no}
+	</select>
+	<select id="selectall" resultType="activity">
+		SELECT ACT_NO, CAT_NO, TITLE, ADDR, ADDR_LAT, ADDR_LONG,
+		ACT_IMG1, ACT_IMG2, ACT_IMG3, ACT_IMG4, ACT_PHONE, DETAIL,
+		ID, TO_CHAR(ST_DATE,'YY-MM-DD') AS ST_DATE,TO_CHAR(END_DATE,'YY-MM-DD') AS END_DATE , QUANTITY, STATE, GEN_NO FROM ACTIVITY
+	</select>
+	<insert id="insert" parameterType="activity">
+		INSERT INTO ACTIVITY VALUES (ACTIVITY_SEQ.NEXTVAL,#{cat_no},#{title},#{addr},#{addr_lat},#{addr_long},#{act_img1},#{act_img2},#{act_img3},#{act_img4},#{act_phone},#{detail},#{id},TO_DATE(#{st_date},'yyyy-mm-dd'),TO_DATE(#{end_date},'yyyy-mm-dd'),#{quantity},#{state},#{gen_no})
+	</insert>
+	<update id="update" parameterType="activity">
+		UPDATE ACTIVITY SET TITLE=#{title},ADDR=#{addr},ADDR_LAT=#{addr_lat},ADDR_LONG=#{addr_long},ACT_IMG1=#{act_img1},ACT_IMG2=#{act_img2},ACT_IMG3=#{act_img3},ACT_IMG4=#{act_img4},ACT_PHONE=#{act_phone},DETAIL=#{detail},ST_DATE=TO_DATE(#{st_date},'yyyy-mm-dd'),END_DATE=TO_DATE(#{end_date},'yyyy-mm-dd'),QUANTITY=#{quantity},STATE=#{state} WHERE ACT_NO=#{act_no}
+	</update>
+	<delete id="delete" parameterType="String">
+		DELETE FROM ACTIVITY WHERE ACT_NO=#{act_no}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+

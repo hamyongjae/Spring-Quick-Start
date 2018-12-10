@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.dao.mapper.InterestMapper">
+			
+	<select id="select" parameterType="String" 
+	resultType="interest">
+		SELECT * FROM INTEREST WHERE ID=#{id}
+	</select>
+	<select id="selectall" resultType="interest">
+		SELECT * FROM INTEREST
+	</select>
+	<insert id="insert" parameterType="interest">
+		INSERT INTO INTEREST VALUES (#{id},#{act_no})
+	</insert>
+	<update id="update" parameterType="interest">
+		UPDATE INTEREST SET ACT_NO=#{act_no} WHERE ID=#{id}
+	</update>
+	<delete id="delete" parameterType="String">
+		DELETE FROM INTEREST WHERE ACT_NO=#{act_no}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+
