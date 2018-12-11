@@ -2,7 +2,7 @@ package polymorphism;
 
 public class AppleSpeaker implements Speaker{
 	public AppleSpeaker() {
-		System.out.println("===> SonySpeaker 객체 생성");
+		System.out.println("===> AppleSpeaker 객체 생성");
 	}
 	
 	public void volumeUp() {

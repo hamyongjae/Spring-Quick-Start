@@ -7,7 +7,6 @@ public class SamsungTV implements TV{
 	public SamsungTV() {
 		System.out.println("===> SamsungTV (1) 객체 생성");
 	}
-
 	public void setSpeaker(Speaker speaker) {
 		System.out.println("===> setSpeaker() 호출");
 		this.speaker = speaker;
