@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="BroadWeb"/>
+<aop-project name="Day01"/>
+<aop-project name="Spring_project1_Oracle-master"/>
 </aop-reference-model>
