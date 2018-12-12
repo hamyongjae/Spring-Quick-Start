@@ -16,7 +16,7 @@ public class JDBCUtil {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 
-			con = DriverManager.getConnection("jdbc:mariadb://localhost/dbname", "userId", "password");
+			con = DriverManager.getConnection("jdbc:mariadb://localhost/sample", "root", "1234");
 //			pstmt = con.prepareStatement("select * from his_bus_voltage");
 //			rs = pstmt.executeQuery();
 //			while (rs.next()) {
