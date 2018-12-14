@@ -2,7 +2,7 @@ package com.springbook.biz.user.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.ResultSet;                                              
 import java.sql.SQLException;
 
 import org.springframework.stereotype.Repository;
@@ -25,7 +25,7 @@ public class UserDAO {
 	// CRUD 기능의 메소드 구현
 	// 회원등록
 	
-	public UserVO getUser(UserVO vo) {
+	public UserVO getUser(UserVO vo) {       
 		UserVO user = null;
 
 		try {
