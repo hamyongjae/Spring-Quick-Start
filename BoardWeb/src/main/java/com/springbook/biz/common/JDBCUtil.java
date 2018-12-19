@@ -15,7 +15,7 @@ public class JDBCUtil {
 
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mariadb://localhost/sample", "root", "1234");
+			con = DriverManager.getConnection("jdbc:mariadb://localhost/board", "root", "1234");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 

@@ -1,9 +1,8 @@
 package com.springbook.biz.board;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class BoardVO {
-
 	private int seq;
 	private String title;
 	private String writer;
@@ -47,7 +46,6 @@ public class BoardVO {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
-	
 	
 	@Override
 	public String toString() {
